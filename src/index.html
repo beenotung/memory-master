@@ -14,40 +14,27 @@
   B
 -->
 <div id='box'>
-  <div id='right'></div>
-  <div id='left'></div>
-  <div id='center'></div>
-  <div id='up'></div>
-  <div id='down'></div>
+  <div id='right'>
+    <div class="light"></div>
+  </div>
+  <div id='left'>
+    <div class="light"></div>
+  </div>
+  <div id='center'>
+    <div class="light"></div>
+  </div>
+  <div id='up'>
+    <div class="light"></div>
+  </div>
+  <div id='down'>
+    <div class="light"></div>
+  </div>
 </div>
 <script src="./main.js"></script>
 <style>
   html, body, #box {
     width: 100%;
     height: 100%;
-  }
-
-  @media (min-aspect-ratio: 1/1) {
-    html, body, #box {
-      /*width: 100vh;*/
-      /*height: 100vh;*/
-    }
-  }
-
-  @media (max-aspect-ratio: 1/1) {
-    html, body, #box {
-      /*width: 100vw;*/
-      /*height: 100vw;*/
-    }
-  }
-
-  :root {
-  }
-
-  #box {
-    --size: 500px;
-    /*max-width: var(--size);*/
-    /*max-height: var(--size);*/
   }
 
   body {
@@ -100,7 +87,16 @@
   #center {
     grid-row: 3;
     grid-column: 3;
-    background-color: yellow;
+    background-color: gold;
+  }
+
+  .light {
+    background-color: white;
+    opacity: 0.5;
+    width: 50%;
+    height: 50%;
+    margin: 25%;
+    border-radius: 50%;
   }
 </style>
 </body>
